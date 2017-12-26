@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Router for Single Page Web App</title>
+</head>
+<body>
+	<div class="wrapper">
+		<ul>
+			<li><a href="#/" title="">Home</a></li>
+			<li><a href="#/about/" title="">About</a></li>
+			<li><a href="#/contact/" title="">Contact</a></li>
+		</ul>
+
+	</div>
+
+	<script src="router.js"></script>
+	<script>
+		var routes = { 
+							'#/': 'home', 
+							'#/about/': 'about',
+							'#/contact/': 'contact'
+						 };
+
+		var router = new Router(routes);
+
+	</script>
+</body>
+</html>
